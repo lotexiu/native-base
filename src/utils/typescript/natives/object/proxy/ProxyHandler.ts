@@ -1,4 +1,4 @@
-import { ProxyOptions } from "./Interfaces";
+import { ProxyOptions } from "./types";
 
 function set<T, P extends keyof T, V extends T[P]>(
 	options: ProxyOptions<T>,
