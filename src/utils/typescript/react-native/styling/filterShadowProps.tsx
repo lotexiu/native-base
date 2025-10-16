@@ -1,5 +1,6 @@
-import { extractInObject } from './../theme/tools/';
+
 import isEmpty from 'lodash.isempty';
+import { extractInObject } from 'src/theme/tools';
 
 export const filterShadowProps = (
   props: any,

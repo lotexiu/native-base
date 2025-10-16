@@ -4,9 +4,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "declaration": true,
-    "paths": {
-      "native-base": ["./src/index"]
-    },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "esModuleInterop": true,
@@ -26,6 +23,26 @@
     "strict": false,
     "target": "esnext",
     "types": [],
-    "noEmitOnError": false
+    "noEmitOnError": false,
+    "paths": {
+      /* Specific paths need to be on top of this list */
+      "@tsn-array/*": ["./src/utils/typescript/natives/array/*"],
+      "@tsn-class/*": ["./src/utils/typescript/natives/class/*"],
+      "@tsn-console/*": ["./src/utils/typescript/natives/console/*"],
+      "@tsn-date/*": ["./src/utils/typescript/natives/date/*"],
+      "@tsn-function/*": ["./src/utils/typescript/natives/function/*"],
+      "@tsn-json/*": ["./src/utils/typescript/natives/json/*"],
+      "@tsn-math/*": ["./src/utils/typescript/natives/math/*"],
+      "@tsn-number/*": ["./src/utils/typescript/natives/number/*"],
+      "@tsn-object/*": ["./src/utils/typescript/natives/object/*"],
+      "@tsn-regex/*": ["./src/utils/typescript/natives/regex/*"],
+      "@tsn-string/*": ["./src/utils/typescript/natives/string/*"],
+      "@tsn/*": ["./src/utils/typescript/natives/*"],
+      "@tsi/*": ["./src/utils/typescript/interfaces/*"],
+      "@tsu/*": ["./src/utils/typescript/unknown/*"],
+      "@tsrn/*": ["src/utils/typescript/react-native/*"],
+      "@ts/*": ["./src/utils/typescript/*"],
+      "native-base": ["./src/index"],
+    },
   }
 }

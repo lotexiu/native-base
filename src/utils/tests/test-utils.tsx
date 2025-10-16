@@ -1,4 +1,4 @@
-import { NativeBaseProvider } from '../core/NativeBaseProvider';
+import { NativeBaseProvider } from '../../core/NativeBaseProvider';
 import * as React from 'react';
 
 export const Wrapper = ({ children }: any) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStyledSystemPropsResolver } from '../hooks/';
+import { useStyledSystemPropsResolver } from '../../../../hooks';
 
 export const makeStyledComponent = (Comp: any) => {
   return React.forwardRef(({ debug, ...props }: any, ref: any) => {
