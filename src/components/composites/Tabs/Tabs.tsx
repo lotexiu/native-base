@@ -4,7 +4,7 @@ import type { ITabsProps } from './types';
 import { useThemeProps } from '../../../hooks';
 import { TabsContext } from './Context';
 import { Item } from '@react-stately/collections';
-import { useTabsState } from '@react-stately/tabs';
+import { useTabListState } from '@react-stately/tabs';
 import TabViews from './TabViews';
 import TabBar from './TabBar';
 import { useTabs } from '@react-native-aria/tabs';
@@ -71,7 +71,7 @@ const Tabs = ({ children, ...props }: ITabsProps, ref: any) => {
     keyboardActivation: props.keyboardActivation,
   };
   // useTabsState needs collection children.
-  let state = useTabsState(mappedProps);
+  let state = useTabListState(mappedProps);
   const setAlign = () => {
     switch (align) {
       case 'start':
